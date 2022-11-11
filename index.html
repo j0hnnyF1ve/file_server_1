@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Streaming With Node</title>
+    <style>
+      body {
+        display: flex;
+        margin: 5% auto;
+        max-width: 100%;
+        background-color: rgb(155, 155, 155);
+      }
+
+      ul { max-height: 80vh; overflow-y: auto; margin-right: 15px; }
+      li { list-style-type: none; margin-bottom: 5px; }
+      a {
+        color: blue;
+        text-decoration: none;
+      }
+      a:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="VideoList"></ul>
+    <video id="videoPlayer" width="50%" controls muted="muted" autoplay>
+      <source src="/video/PXL_20221104_132438664" type="video/mp4" />
+    </video>
+    <script type="text/javascript" src="/scripts/client.js"></script>
+  </body>
+</html>
